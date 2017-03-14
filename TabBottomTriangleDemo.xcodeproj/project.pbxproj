@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C593AEC51E77892400C1EFE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEC41E77892400C1EFE8 /* AppDelegate.m */; };
+		C593AEC81E77892400C1EFE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEC71E77892400C1EFE8 /* main.m */; };
+		C593AECB1E77892400C1EFE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AECA1E77892400C1EFE8 /* ViewController.m */; };
+		C593AECD1E77892400C1EFE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C593AECC1E77892400C1EFE8 /* Assets.xcassets */; };
+		C593AED01E77892400C1EFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C593AECE1E77892400C1EFE8 /* Main.storyboard */; };
+		C593AEDB1E77892400C1EFE8 /* TabBottomTriangleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEDA1E77892400C1EFE8 /* TabBottomTriangleDemoTests.m */; };
+		C593AEE61E77892400C1EFE8 /* TabBottomTriangleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEE51E77892400C1EFE8 /* TabBottomTriangleDemoUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C593AED71E77892400C1EFE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C593AEB81E77892400C1EFE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C593AEBF1E77892400C1EFE8;
+			remoteInfo = TabBottomTriangleDemo;
+		};
+		C593AEE21E77892400C1EFE8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C593AEB81E77892400C1EFE8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C593AEBF1E77892400C1EFE8;
+			remoteInfo = TabBottomTriangleDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C593AEC01E77892400C1EFE8 /* TabBottomTriangleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBottomTriangleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C593AEC31E77892400C1EFE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C593AEC41E77892400C1EFE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C593AEC71E77892400C1EFE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C593AEC91E77892400C1EFE8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C593AECA1E77892400C1EFE8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C593AECC1E77892400C1EFE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C593AECF1E77892400C1EFE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C593AED11E77892400C1EFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C593AED61E77892400C1EFE8 /* TabBottomTriangleDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBottomTriangleDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C593AEDA1E77892400C1EFE8 /* TabBottomTriangleDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBottomTriangleDemoTests.m; sourceTree = "<group>"; };
+		C593AEDC1E77892400C1EFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C593AEE11E77892400C1EFE8 /* TabBottomTriangleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBottomTriangleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C593AEE51E77892400C1EFE8 /* TabBottomTriangleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBottomTriangleDemoUITests.m; sourceTree = "<group>"; };
+		C593AEE71E77892400C1EFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C593AEBD1E77892400C1EFE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C593AED31E77892400C1EFE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C593AEDE1E77892400C1EFE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C593AEB71E77892400C1EFE8 = {
+			isa = PBXGroup;
+			children = (
+				C593AEC21E77892400C1EFE8 /* TabBottomTriangleDemo */,
+				C593AED91E77892400C1EFE8 /* TabBottomTriangleDemoTests */,
+				C593AEE41E77892400C1EFE8 /* TabBottomTriangleDemoUITests */,
+				C593AEC11E77892400C1EFE8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C593AEC11E77892400C1EFE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C593AEC01E77892400C1EFE8 /* TabBottomTriangleDemo.app */,
+				C593AED61E77892400C1EFE8 /* TabBottomTriangleDemoTests.xctest */,
+				C593AEE11E77892400C1EFE8 /* TabBottomTriangleDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C593AEC21E77892400C1EFE8 /* TabBottomTriangleDemo */ = {
+			isa = PBXGroup;
+			children = (
+				C593AEC31E77892400C1EFE8 /* AppDelegate.h */,
+				C593AEC41E77892400C1EFE8 /* AppDelegate.m */,
+				C593AEC91E77892400C1EFE8 /* ViewController.h */,
+				C593AECA1E77892400C1EFE8 /* ViewController.m */,
+				C593AECC1E77892400C1EFE8 /* Assets.xcassets */,
+				C593AECE1E77892400C1EFE8 /* Main.storyboard */,
+				C593AED11E77892400C1EFE8 /* Info.plist */,
+				C593AEC61E77892400C1EFE8 /* Supporting Files */,
+			);
+			path = TabBottomTriangleDemo;
+			sourceTree = "<group>";
+		};
+		C593AEC61E77892400C1EFE8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C593AEC71E77892400C1EFE8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C593AED91E77892400C1EFE8 /* TabBottomTriangleDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C593AEDA1E77892400C1EFE8 /* TabBottomTriangleDemoTests.m */,
+				C593AEDC1E77892400C1EFE8 /* Info.plist */,
+			);
+			path = TabBottomTriangleDemoTests;
+			sourceTree = "<group>";
+		};
+		C593AEE41E77892400C1EFE8 /* TabBottomTriangleDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C593AEE51E77892400C1EFE8 /* TabBottomTriangleDemoUITests.m */,
+				C593AEE71E77892400C1EFE8 /* Info.plist */,
+			);
+			path = TabBottomTriangleDemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C593AEBF1E77892400C1EFE8 /* TabBottomTriangleDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C593AEEA1E77892400C1EFE8 /* Build configuration list for PBXNativeTarget "TabBottomTriangleDemo" */;
+			buildPhases = (
+				C593AEBC1E77892400C1EFE8 /* Sources */,
+				C593AEBD1E77892400C1EFE8 /* Frameworks */,
+				C593AEBE1E77892400C1EFE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TabBottomTriangleDemo;
+			productName = TabBottomTriangleDemo;
+			productReference = C593AEC01E77892400C1EFE8 /* TabBottomTriangleDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C593AED51E77892400C1EFE8 /* TabBottomTriangleDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C593AEED1E77892400C1EFE8 /* Build configuration list for PBXNativeTarget "TabBottomTriangleDemoTests" */;
+			buildPhases = (
+				C593AED21E77892400C1EFE8 /* Sources */,
+				C593AED31E77892400C1EFE8 /* Frameworks */,
+				C593AED41E77892400C1EFE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C593AED81E77892400C1EFE8 /* PBXTargetDependency */,
+			);
+			name = TabBottomTriangleDemoTests;
+			productName = TabBottomTriangleDemoTests;
+			productReference = C593AED61E77892400C1EFE8 /* TabBottomTriangleDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C593AEE01E77892400C1EFE8 /* TabBottomTriangleDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C593AEF01E77892400C1EFE8 /* Build configuration list for PBXNativeTarget "TabBottomTriangleDemoUITests" */;
+			buildPhases = (
+				C593AEDD1E77892400C1EFE8 /* Sources */,
+				C593AEDE1E77892400C1EFE8 /* Frameworks */,
+				C593AEDF1E77892400C1EFE8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C593AEE31E77892400C1EFE8 /* PBXTargetDependency */,
+			);
+			name = TabBottomTriangleDemoUITests;
+			productName = TabBottomTriangleDemoUITests;
+			productReference = C593AEE11E77892400C1EFE8 /* TabBottomTriangleDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C593AEB81E77892400C1EFE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = com.homebrew.zhaorui;
+				TargetAttributes = {
+					C593AEBF1E77892400C1EFE8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7HN3FL9R65;
+						ProvisioningStyle = Automatic;
+					};
+					C593AED51E77892400C1EFE8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7HN3FL9R65;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C593AEBF1E77892400C1EFE8;
+					};
+					C593AEE01E77892400C1EFE8 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7HN3FL9R65;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C593AEBF1E77892400C1EFE8;
+					};
+				};
+			};
+			buildConfigurationList = C593AEBB1E77892400C1EFE8 /* Build configuration list for PBXProject "TabBottomTriangleDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C593AEB71E77892400C1EFE8;
+			productRefGroup = C593AEC11E77892400C1EFE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C593AEBF1E77892400C1EFE8 /* TabBottomTriangleDemo */,
+				C593AED51E77892400C1EFE8 /* TabBottomTriangleDemoTests */,
+				C593AEE01E77892400C1EFE8 /* TabBottomTriangleDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C593AEBE1E77892400C1EFE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C593AECD1E77892400C1EFE8 /* Assets.xcassets in Resources */,
+				C593AED01E77892400C1EFE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C593AED41E77892400C1EFE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C593AEDF1E77892400C1EFE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C593AEBC1E77892400C1EFE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C593AECB1E77892400C1EFE8 /* ViewController.m in Sources */,
+				C593AEC81E77892400C1EFE8 /* main.m in Sources */,
+				C593AEC51E77892400C1EFE8 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C593AED21E77892400C1EFE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C593AEDB1E77892400C1EFE8 /* TabBottomTriangleDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C593AEDD1E77892400C1EFE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C593AEE61E77892400C1EFE8 /* TabBottomTriangleDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C593AED81E77892400C1EFE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C593AEBF1E77892400C1EFE8 /* TabBottomTriangleDemo */;
+			targetProxy = C593AED71E77892400C1EFE8 /* PBXContainerItemProxy */;
+		};
+		C593AEE31E77892400C1EFE8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C593AEBF1E77892400C1EFE8 /* TabBottomTriangleDemo */;
+			targetProxy = C593AEE21E77892400C1EFE8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C593AECE1E77892400C1EFE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C593AECF1E77892400C1EFE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C593AEE81E77892400C1EFE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C593AEE91E77892400C1EFE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C593AEEB1E77892400C1EFE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HN3FL9R65;
+				INFOPLIST_FILE = TabBottomTriangleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.TabBottomTriangleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C593AEEC1E77892400C1EFE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HN3FL9R65;
+				INFOPLIST_FILE = TabBottomTriangleDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.TabBottomTriangleDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C593AEEE1E77892400C1EFE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HN3FL9R65;
+				INFOPLIST_FILE = TabBottomTriangleDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.TabBottomTriangleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabBottomTriangleDemo.app/Contents/MacOS/TabBottomTriangleDemo";
+			};
+			name = Debug;
+		};
+		C593AEEF1E77892400C1EFE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HN3FL9R65;
+				INFOPLIST_FILE = TabBottomTriangleDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.TabBottomTriangleDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TabBottomTriangleDemo.app/Contents/MacOS/TabBottomTriangleDemo";
+			};
+			name = Release;
+		};
+		C593AEF11E77892400C1EFE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HN3FL9R65;
+				INFOPLIST_FILE = TabBottomTriangleDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.TabBottomTriangleDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TabBottomTriangleDemo;
+			};
+			name = Debug;
+		};
+		C593AEF21E77892400C1EFE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7HN3FL9R65;
+				INFOPLIST_FILE = TabBottomTriangleDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.TabBottomTriangleDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TabBottomTriangleDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C593AEBB1E77892400C1EFE8 /* Build configuration list for PBXProject "TabBottomTriangleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C593AEE81E77892400C1EFE8 /* Debug */,
+				C593AEE91E77892400C1EFE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C593AEEA1E77892400C1EFE8 /* Build configuration list for PBXNativeTarget "TabBottomTriangleDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C593AEEB1E77892400C1EFE8 /* Debug */,
+				C593AEEC1E77892400C1EFE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C593AEED1E77892400C1EFE8 /* Build configuration list for PBXNativeTarget "TabBottomTriangleDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C593AEEE1E77892400C1EFE8 /* Debug */,
+				C593AEEF1E77892400C1EFE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C593AEF01E77892400C1EFE8 /* Build configuration list for PBXNativeTarget "TabBottomTriangleDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C593AEF11E77892400C1EFE8 /* Debug */,
+				C593AEF21E77892400C1EFE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C593AEB81E77892400C1EFE8 /* Project object */;
+}
