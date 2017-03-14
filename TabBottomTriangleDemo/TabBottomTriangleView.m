@@ -22,4 +22,33 @@
     [path fill];
 }
 
+-(void)mouseEntered:(NSEvent *)event {
+    NSMenu *theMenu = [[NSMenu alloc] initWithTitle:@"Contextual Menu"];
+    [theMenu insertItemWithTitle:@"Beep" action:@selector(beep) keyEquivalent:@"" atIndex:0];
+    [theMenu insertItemWithTitle:@"Honk" action:@selector(honk) keyEquivalent:@"" atIndex:1];
+    for (int index = 0; index < theMenu.itemArray.count; index++) {
+        [theMenu.itemArray[index] setTarget:self];
+    }
+    [theMenu popUpMenuPositioningItem:nil atLocation:NSMakePoint(self.bounds.size.width, 0) inView:self];
+    //[NSMenu popUpContextMenu:theMenu withEvent:event forView:self]
+    
+}
+
+-(void)mouseExited:(NSEvent *)event {
+    
+}
+
+-(void)mouseDown:(NSEvent *)event {
+    NSLog(@"mouseDown");
+}
+
+
+-(void)beep{
+    NSLog(@"beep");
+}
+
+-(void)honk{
+    NSLog(@"honk");
+}
+
 @end

@@ -16,8 +16,11 @@
 @implementation MockTabViewController
 
 - (void)viewDidLoad {
+    
+    
     [super viewDidLoad];
     [self.triangle_view setHidden:true];
+    [self.triangle_view addTrackingRect:self.triangle_view.bounds owner:self.triangle_view userData:nil assumeInside:false];
     [(MockTabView*)self.view setController:self];
     [self.view addTrackingRect:self.view.bounds owner:self.view userData:nil assumeInside:false];
 }
