@@ -7,9 +7,14 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "MockTabView.h"
+#import "TabBottomTriangleView.h"
+#import "MockTabViewController.h"
 
 @interface ViewController : NSViewController
 
+@property (weak) IBOutlet NSView *demo_tab_view;
+@property (strong) MockTabViewController * mock_tab_vc;
 
 @end
 

@@ -14,6 +14,9 @@
 		C593AED01E77892400C1EFE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C593AECE1E77892400C1EFE8 /* Main.storyboard */; };
 		C593AEDB1E77892400C1EFE8 /* TabBottomTriangleDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEDA1E77892400C1EFE8 /* TabBottomTriangleDemoTests.m */; };
 		C593AEE61E77892400C1EFE8 /* TabBottomTriangleDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEE51E77892400C1EFE8 /* TabBottomTriangleDemoUITests.m */; };
+		C593AEF51E77896A00C1EFE8 /* MockTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEF41E77896A00C1EFE8 /* MockTabView.m */; };
+		C593AEF81E778A4600C1EFE8 /* TabBottomTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEF71E778A4600C1EFE8 /* TabBottomTriangleView.m */; };
+		C593AEFB1E778C8E00C1EFE8 /* MockTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEFA1E778C8E00C1EFE8 /* MockTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,12 @@
 		C593AEE11E77892400C1EFE8 /* TabBottomTriangleDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBottomTriangleDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C593AEE51E77892400C1EFE8 /* TabBottomTriangleDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBottomTriangleDemoUITests.m; sourceTree = "<group>"; };
 		C593AEE71E77892400C1EFE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C593AEF31E77896A00C1EFE8 /* MockTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockTabView.h; sourceTree = "<group>"; };
+		C593AEF41E77896A00C1EFE8 /* MockTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockTabView.m; sourceTree = "<group>"; };
+		C593AEF61E778A4600C1EFE8 /* TabBottomTriangleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBottomTriangleView.h; sourceTree = "<group>"; };
+		C593AEF71E778A4600C1EFE8 /* TabBottomTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBottomTriangleView.m; sourceTree = "<group>"; };
+		C593AEF91E778C8E00C1EFE8 /* MockTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockTabViewController.h; sourceTree = "<group>"; };
+		C593AEFA1E778C8E00C1EFE8 /* MockTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,12 @@
 				C593AECA1E77892400C1EFE8 /* ViewController.m */,
 				C593AECC1E77892400C1EFE8 /* Assets.xcassets */,
 				C593AECE1E77892400C1EFE8 /* Main.storyboard */,
+				C593AEF31E77896A00C1EFE8 /* MockTabView.h */,
+				C593AEF41E77896A00C1EFE8 /* MockTabView.m */,
+				C593AEF91E778C8E00C1EFE8 /* MockTabViewController.h */,
+				C593AEFA1E778C8E00C1EFE8 /* MockTabViewController.m */,
+				C593AEF61E778A4600C1EFE8 /* TabBottomTriangleView.h */,
+				C593AEF71E778A4600C1EFE8 /* TabBottomTriangleView.m */,
 				C593AED11E77892400C1EFE8 /* Info.plist */,
 				C593AEC61E77892400C1EFE8 /* Supporting Files */,
 			);
@@ -272,8 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C593AEF51E77896A00C1EFE8 /* MockTabView.m in Sources */,
+				C593AEF81E778A4600C1EFE8 /* TabBottomTriangleView.m in Sources */,
 				C593AECB1E77892400C1EFE8 /* ViewController.m in Sources */,
 				C593AEC81E77892400C1EFE8 /* main.m in Sources */,
+				C593AEFB1E778C8E00C1EFE8 /* MockTabViewController.m in Sources */,
 				C593AEC51E77892400C1EFE8 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

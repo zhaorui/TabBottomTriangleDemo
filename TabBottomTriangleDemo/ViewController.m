@@ -11,9 +11,10 @@
 @implementation ViewController
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
-
-  // Do any additional setup after loading the view.
+    [super viewDidLoad];
+    NSStoryboard* storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
+    self.mock_tab_vc = [storyboard instantiateControllerWithIdentifier:@"MockTabViewController"];
+    [self.demo_tab_view addSubview:[self.mock_tab_vc view]];
 }
 
 
