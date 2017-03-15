@@ -25,6 +25,8 @@
     [[self.controller triangle_view] setHidden:true];
 }
 
-
+-(void)mouseDown:(NSEvent *)event {
+    NSLog(@"MockTabView mouseDown");
+}
 
 @end

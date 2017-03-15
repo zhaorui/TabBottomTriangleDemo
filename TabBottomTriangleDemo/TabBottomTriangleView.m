@@ -23,14 +23,6 @@
 }
 
 -(void)mouseEntered:(NSEvent *)event {
-    NSMenu *theMenu = [[NSMenu alloc] initWithTitle:@"Contextual Menu"];
-    [theMenu insertItemWithTitle:@"Beep" action:@selector(beep) keyEquivalent:@"" atIndex:0];
-    [theMenu insertItemWithTitle:@"Honk" action:@selector(honk) keyEquivalent:@"" atIndex:1];
-    for (int index = 0; index < theMenu.itemArray.count; index++) {
-        [theMenu.itemArray[index] setTarget:self];
-    }
-    [theMenu popUpMenuPositioningItem:nil atLocation:NSMakePoint(self.bounds.size.width, 0) inView:self];
-    //[NSMenu popUpContextMenu:theMenu withEvent:event forView:self]
     
 }
 
@@ -39,9 +31,28 @@
 }
 
 -(void)mouseDown:(NSEvent *)event {
-    NSLog(@"mouseDown");
+    NSLog(@"TabBottomTriangleView mouseDown");
+    NSMenu *theMenu = [[NSMenu alloc] initWithTitle:@"Contextual Menu"];
+    [theMenu insertItemWithTitle:@"Beep" action:@selector(beep) keyEquivalent:@"" atIndex:0];
+    [theMenu insertItemWithTitle:@"Honk" action:@selector(honk) keyEquivalent:@"" atIndex:1];
+    for (int index = 0; index < theMenu.itemArray.count; index++) {
+        [theMenu.itemArray[index] setTarget:self];
+    }
+    [theMenu popUpMenuPositioningItem:nil atLocation:NSMakePoint(self.bounds.size.width, 0) inView:self];
+    //[NSMenu popUpContextMenu:theMenu withEvent:event forView:self]
 }
 
+-(NSView *)hitTest:(NSPoint)point {
+    NSPoint viewPoint = [self convertPoint:point fromView:self.superview];
+    if (NSPointInRect(point, self.frame)) {
+        if (viewPoint.x >= viewPoint.y) {
+            return self;
+        } else {
+            return self.superview;
+        }
+    }
+    return [super hitTest:point];
+}
 
 -(void)beep{
     NSLog(@"beep");
