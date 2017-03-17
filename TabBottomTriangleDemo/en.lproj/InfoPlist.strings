@@ -1,0 +1,9 @@
+/* 
+  InfoPlist.strings
+  TabBottomTriangleDemo
+
+  Created by 赵睿 on 17/03/2017.
+  Copyright © 2017 com.homebrew.zhaorui. All rights reserved.
+*/
+
+CFBundleDisplayName = "TriangleDemo";

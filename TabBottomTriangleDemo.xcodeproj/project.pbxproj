@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C5035E2B1E7B8C6F00E695EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C5035E2D1E7B8C6F00E695EF /* InfoPlist.strings */; };
 		C593AEC51E77892400C1EFE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEC41E77892400C1EFE8 /* AppDelegate.m */; };
 		C593AEC81E77892400C1EFE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEC71E77892400C1EFE8 /* main.m */; };
 		C593AECB1E77892400C1EFE8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AECA1E77892400C1EFE8 /* ViewController.m */; };
@@ -37,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C5035E281E7B8B9B00E695EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		C5035E2C1E7B8C6F00E695EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C5035E2E1E7B8CA600E695EF /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		C593AEC01E77892400C1EFE8 /* TabBottomTriangleDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabBottomTriangleDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C593AEC31E77892400C1EFE8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C593AEC41E77892400C1EFE8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 				C593AEF61E778A4600C1EFE8 /* TabBottomTriangleView.h */,
 				C593AEF71E778A4600C1EFE8 /* TabBottomTriangleView.m */,
 				C593AED11E77892400C1EFE8 /* Info.plist */,
+				C5035E2D1E7B8C6F00E695EF /* InfoPlist.strings */,
 				C593AEC61E77892400C1EFE8 /* Supporting Files */,
 			);
 			path = TabBottomTriangleDemo;
@@ -243,6 +248,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = C593AEB71E77892400C1EFE8;
 			productRefGroup = C593AEC11E77892400C1EFE8 /* Products */;
@@ -262,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C593AECD1E77892400C1EFE8 /* Assets.xcassets in Resources */,
+				C5035E2B1E7B8C6F00E695EF /* InfoPlist.strings in Resources */,
 				C593AED01E77892400C1EFE8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,10 +335,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C5035E2D1E7B8C6F00E695EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5035E2C1E7B8C6F00E695EF /* en */,
+				C5035E2E1E7B8CA600E695EF /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		C593AECE1E77892400C1EFE8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C593AECF1E77892400C1EFE8 /* Base */,
+				C5035E281E7B8B9B00E695EF /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -343,6 +360,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -390,6 +408,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -525,6 +544,7 @@
 				C593AEEC1E77892400C1EFE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C593AEED1E77892400C1EFE8 /* Build configuration list for PBXNativeTarget "TabBottomTriangleDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -533,6 +553,7 @@
 				C593AEEF1E77892400C1EFE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C593AEF01E77892400C1EFE8 /* Build configuration list for PBXNativeTarget "TabBottomTriangleDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -541,6 +562,7 @@
 				C593AEF21E77892400C1EFE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
