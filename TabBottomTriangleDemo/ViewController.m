@@ -10,11 +10,23 @@
 
 @implementation ViewController
 
+-(instancetype)initWithCoder:(NSCoder *)coder {
+    if (self = [super initWithCoder:coder]) {
+        //Why I can't addObserver here?
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSStoryboard* storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     self.mock_tab_vc = [storyboard instantiateControllerWithIdentifier:@"MockTabViewController"];
     [self.demo_tab_view addSubview:[self.mock_tab_vc view]];
+    
+    [[NSNotificationCenter defaultCenter]   addObserver:self
+                                            selector:@selector(viewFrameChanged:)
+                                            name:NSViewFrameDidChangeNotification
+                                            object:self.view];
 }
 
 
@@ -24,5 +36,8 @@
   // Update the view, if already loaded.
 }
 
+-(void)viewFrameChanged:(NSNotification*)info {
+    NSLog(@"Current frame: %@", NSStringFromRect([self.view frame]));
+}
 
 @end
