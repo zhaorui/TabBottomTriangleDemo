@@ -18,6 +18,8 @@
 		C593AEF51E77896A00C1EFE8 /* MockTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEF41E77896A00C1EFE8 /* MockTabView.m */; };
 		C593AEF81E778A4600C1EFE8 /* TabBottomTriangleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEF71E778A4600C1EFE8 /* TabBottomTriangleView.m */; };
 		C593AEFB1E778C8E00C1EFE8 /* MockTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C593AEFA1E778C8E00C1EFE8 /* MockTabViewController.m */; };
+		C5985A1B1E7E68B60023E892 /* WelcomeWC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5985A1A1E7E68B60023E892 /* WelcomeWC.swift */; };
+		C5985A1D1E7E693E0023E892 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5985A1C1E7E693E0023E892 /* WelcomeVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,9 @@
 		C593AEF71E778A4600C1EFE8 /* TabBottomTriangleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBottomTriangleView.m; sourceTree = "<group>"; };
 		C593AEF91E778C8E00C1EFE8 /* MockTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MockTabViewController.h; sourceTree = "<group>"; };
 		C593AEFA1E778C8E00C1EFE8 /* MockTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MockTabViewController.m; sourceTree = "<group>"; };
+		C5985A191E7E68B60023E892 /* TabBottomTriangleDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabBottomTriangleDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		C5985A1A1E7E68B60023E892 /* WelcomeWC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeWC.swift; sourceTree = "<group>"; };
+		C5985A1C1E7E693E0023E892 /* WelcomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +119,8 @@
 			children = (
 				C593AEC31E77892400C1EFE8 /* AppDelegate.h */,
 				C593AEC41E77892400C1EFE8 /* AppDelegate.m */,
+				C5985A1A1E7E68B60023E892 /* WelcomeWC.swift */,
+				C5985A1C1E7E693E0023E892 /* WelcomeVC.swift */,
 				C593AEC91E77892400C1EFE8 /* ViewController.h */,
 				C593AECA1E77892400C1EFE8 /* ViewController.m */,
 				C593AECC1E77892400C1EFE8 /* Assets.xcassets */,
@@ -127,6 +134,7 @@
 				C593AED11E77892400C1EFE8 /* Info.plist */,
 				C5035E2D1E7B8C6F00E695EF /* InfoPlist.strings */,
 				C593AEC61E77892400C1EFE8 /* Supporting Files */,
+				C5985A191E7E68B60023E892 /* TabBottomTriangleDemo-Bridging-Header.h */,
 			);
 			path = TabBottomTriangleDemo;
 			sourceTree = "<group>";
@@ -225,6 +233,7 @@
 					C593AEBF1E77892400C1EFE8 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7HN3FL9R65;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 					C593AED51E77892400C1EFE8 = {
@@ -299,7 +308,9 @@
 				C593AECB1E77892400C1EFE8 /* ViewController.m in Sources */,
 				C593AEC81E77892400C1EFE8 /* main.m in Sources */,
 				C593AEFB1E778C8E00C1EFE8 /* MockTabViewController.m in Sources */,
+				C5985A1B1E7E68B60023E892 /* WelcomeWC.swift in Sources */,
 				C593AEC51E77892400C1EFE8 /* AppDelegate.m in Sources */,
+				C5985A1D1E7E693E0023E892 /* WelcomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,12 +460,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HN3FL9R65;
 				INFOPLIST_FILE = TabBottomTriangleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.TabBottomTriangleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TabBottomTriangleDemo/TabBottomTriangleDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -462,18 +477,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HN3FL9R65;
 				INFOPLIST_FILE = TabBottomTriangleDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhaorui.TabBottomTriangleDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TabBottomTriangleDemo/TabBottomTriangleDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		C593AEEE1E77892400C1EFE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HN3FL9R65;
@@ -488,6 +507,7 @@
 		C593AEEF1E77892400C1EFE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HN3FL9R65;
@@ -502,6 +522,7 @@
 		C593AEF11E77892400C1EFE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HN3FL9R65;
 				INFOPLIST_FILE = TabBottomTriangleDemoUITests/Info.plist;
@@ -515,6 +536,7 @@
 		C593AEF21E77892400C1EFE8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 7HN3FL9R65;
 				INFOPLIST_FILE = TabBottomTriangleDemoUITests/Info.plist;

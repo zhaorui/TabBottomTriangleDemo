@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Qqy-pd-gns">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11542"/>
@@ -663,11 +663,11 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="MainWC" id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="614" y="379" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
@@ -676,7 +676,75 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="5" y="250"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="bG4-kC-2pN">
+            <objects>
+                <windowController id="Qqy-pd-gns" customClass="WelcomeWC" customModule="TabBottomTriangleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" identifier="WelcomeWC" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="NkL-2N-y3d">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <rect key="contentRect" x="591" y="756" width="480" height="271"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                    </window>
+                    <connections>
+                        <segue destination="n7s-sV-hoz" kind="relationship" relationship="window.shadowedContentViewController" id="0p8-XC-Pr9"/>
+                    </connections>
+                </windowController>
+                <customObject id="Bb2-tk-Ih3" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="250.5"/>
+        </scene>
+        <!--WelcomeVC-->
+        <scene sceneID="YQn-SV-A7I">
+            <objects>
+                <viewController id="n7s-sV-hoz" customClass="WelcomeVC" customModule="TabBottomTriangleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="fYu-Zz-Zjk">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LPx-3W-1lb">
+                                <rect key="frame" x="188" y="120" width="104" height="29"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Welcome" id="nOv-45-t1Q">
+                                    <font key="font" metaFont="system" size="24"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cuP-s7-8ws">
+                                <rect key="frame" x="203" y="13" width="74" height="32"/>
+                                <buttonCell key="cell" type="push" title="Login" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="P1q-Vt-cIf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="login:" target="n7s-sV-hoz" id="dYP-tO-1A5"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="161-aI-H3S">
+                                <rect key="frame" x="279" y="13" width="78" height="32"/>
+                                <buttonCell key="cell" type="push" title="login2" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="QFY-d8-4DT">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <segue destination="B8D-0N-5wS" kind="custom" identifier="go_to_main_window" customClass="WelcomeToMainSegue" customModule="TabBottomTriangleDemo" customModuleProvider="target" id="TGn-1C-Id1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="LPx-3W-1lb" firstAttribute="centerX" secondItem="fYu-Zz-Zjk" secondAttribute="centerX" id="5rU-Ps-3fV"/>
+                            <constraint firstItem="LPx-3W-1lb" firstAttribute="centerY" secondItem="fYu-Zz-Zjk" secondAttribute="centerY" id="BOQ-g9-fuY"/>
+                            <constraint firstAttribute="bottom" secondItem="cuP-s7-8ws" secondAttribute="bottom" constant="20" id="VWe-l9-hj1"/>
+                            <constraint firstItem="161-aI-H3S" firstAttribute="leading" secondItem="cuP-s7-8ws" secondAttribute="trailing" constant="14" id="uUx-X2-Ueb"/>
+                            <constraint firstItem="161-aI-H3S" firstAttribute="baseline" secondItem="cuP-s7-8ws" secondAttribute="baseline" id="wEf-qz-dkR"/>
+                            <constraint firstItem="cuP-s7-8ws" firstAttribute="centerX" secondItem="fYu-Zz-Zjk" secondAttribute="centerX" id="xQE-nQ-bYq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="eGv-Qn-haO" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="599" y="665"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
@@ -705,7 +773,7 @@
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="5" y="671"/>
         </scene>
         <!--Mock Tab View Controller-->
         <scene sceneID="xYd-IR-fkP">

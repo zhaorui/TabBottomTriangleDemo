@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AppDelegate.h"
 
 @implementation ViewController
 
@@ -22,7 +23,7 @@
     NSStoryboard* storyboard = [NSStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]];
     self.mock_tab_vc = [storyboard instantiateControllerWithIdentifier:@"MockTabViewController"];
     [self.demo_tab_view addSubview:[self.mock_tab_vc view]];
-    
+  
     [[NSNotificationCenter defaultCenter]   addObserver:self
                                             selector:@selector(viewFrameChanged:)
                                             name:NSViewFrameDidChangeNotification
